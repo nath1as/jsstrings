@@ -1,9 +1,2 @@
-var string = `
-0x1234abcd
-1,000,000,000s and 1,000,000,000s.
-THE quick BROWN fox JUMPS over THE lazy DOG!
-`;
-
-var match = string.match(/[^a-z]/gi); //does not work because it has to only include letters
-console.log(match);
-console.log(match.length);
+// Are /(ABC|abc)/ and /[Aa][Bb][Cc]/ equivalent regex? I
+// The former matches nothing but the strings ABC or abc; the latter matches any string consisting of the letters a, b, c in sequence, regardless of case. The string Abc would match the second pattern, but not the first.
