@@ -1,5 +1,5 @@
-function removeVowels(string) {
-  return string.map(function (word) {
+function removeVowels(array) {
+  return array.map(function (word) {
     return word.replace(/[aeiou]/ig, '');
   });
 }
