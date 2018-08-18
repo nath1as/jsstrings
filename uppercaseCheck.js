@@ -3,6 +3,10 @@ function isUppercase(string) {
     return char === char.toUpperCase();
   })
 }
+// alternative:
+// function isUppercase(string) {
+//   return !/[a-z]/.test(string);
+// }
 console.log(
   isUppercase('t'),               // false
   isUppercase('T'),               // true
