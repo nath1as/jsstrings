@@ -1,7 +1,7 @@
 function longestSentence(text) {
   var textArray = text.split(/(.*?[\.\?\!])/g).sort(function (sentence, sentence2) {
     return sentence2.length - sentence.length;
-  });
+  }); // instead of split that excludes matches use text.match(/\w.*?[.!?]/g);
   console.log(textArray[0]);
   console.log('The longest stenence has ' + textArray[0].trim().split(' ').length + ' words.');
 }
